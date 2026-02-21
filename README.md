@@ -1,4 +1,4 @@
-# 🎮 2048 — The Classic Puzzle Game
+#  2048 — The Classic Puzzle Game
 
 A fully playable, premium-looking **2048** sliding puzzle game built with vanilla HTML, CSS, and JavaScript. Features a sleek dark theme, smooth animations, and mobile support.
 
@@ -6,7 +6,7 @@ A fully playable, premium-looking **2048** sliding puzzle game built with vanill
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Classic 2048 Gameplay** — Slide and merge tiles on a 4×4 grid to reach 2048
 - **Multiple Controls** — Arrow keys, WASD, and mobile swipe gestures
@@ -22,7 +22,7 @@ A fully playable, premium-looking **2048** sliding puzzle game built with vanill
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 No build tools, frameworks, or dependencies required — just open the file in a browser.
 
@@ -38,7 +38,7 @@ start index.html
 
 ---
 
-## 🎯 How to Play
+##  How to Play
 
 1. Use **Arrow Keys** (↑ ↓ ← →) or **WASD** to slide all tiles in a direction
 2. When two tiles with the **same number** collide, they **merge into one** (e.g. 2 + 2 = 4)
@@ -50,21 +50,7 @@ start index.html
 
 ---
 
-## 📁 Project Structure
 
-```
-2048/
-├── index.html              # Main HTML page
-├── README.md               # This file
-├── css/
-│   └── style.css           # Complete styling — dark theme, tiles, animations, responsive
-└── js/
-    ├── storage.js           # Best score persistence via localStorage
-    ├── game-logic.js        # Pure game logic — slide, merge, win/loss detection
-    ├── board.js             # 4×4 grid state management & random tile placement
-    ├── ui.js                # DOM rendering, tile updates, score display, overlays
-    └── app.js               # Entry point — game loop, keyboard & swipe input handling
-```
 
 ### Module Responsibilities
 
@@ -92,7 +78,7 @@ No frameworks. No build step. No dependencies.
 
 ---
 
-## 🎨 Design Highlights
+##  Design Highlights
 
 - **Color Palette** — Dark navy background (`#0f0f1a`) with purple (`#7c5cfc`) and pink (`#ec4899`) accents
 - **Tile Progression** — Colors shift from cool dark purples (2, 4) → warm oranges (8–64) → golden yellows (128–2048) → vibrant gradient (super tiles)
@@ -102,7 +88,7 @@ No frameworks. No build step. No dependencies.
 
 ---
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 | Screen Width | Tile Size | Gap |
 |---|---|---|
@@ -112,7 +98,7 @@ No frameworks. No build step. No dependencies.
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available for personal and educational use.
 
