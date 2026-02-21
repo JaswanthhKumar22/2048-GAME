@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048 — The Classic Puzzle Game</title>
+    <meta name="description"
+        content="Play the classic 2048 sliding puzzle game. Merge tiles, reach 2048, and beat your best score!" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <!-- Header -->
+        <header class="game-header">
+            <div class="title-group">
+                <h1 class="game-title">2048</h1>
+                <p class="game-tagline">Join the tiles, get to <strong>2048!</strong></p>
+            </div>
+            <div class="scores-row">
+                <div class="score-box" id="score-box">
+                    <span class="score-label">Score</span>
+                    <span class="score-value" id="current-score">0</span>
+                    <span class="score-addition" id="score-addition"></span>
+                </div>
+                <div class="score-box best">
+                    <span class="score-label">Best</span>
+                    <span class="score-value" id="best-score">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Controls -->
+        <div class="controls-bar">
+            <button class="btn-restart" id="btn-restart" title="New Game">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                </svg>
+                New Game
+            </button>
+            <p class="hint-text">Use <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> or
+                <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></p>
+        </div>
+
+        <!-- Game Board -->
+        <div class="board-container" id="board-container">
+            <div class="grid-background" id="grid-background"></div>
+            <div class="tile-layer" id="tile-layer"></div>
+
+            <!-- Win Overlay -->
+            <div class="overlay" id="overlay-win">
+                <div class="overlay-content">
+                    <h2 class="overlay-title win-title">🎉 You Win!</h2>
+                    <p class="overlay-message">You reached <strong>2048</strong>!</p>
+                    <div class="overlay-buttons">
+                        <button class="btn-overlay" id="btn-keep-playing">Keep Playing</button>
+                        <button class="btn-overlay secondary" id="btn-restart-win">New Game</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Over Overlay -->
+            <div class="overlay" id="overlay-gameover">
+                <div class="overlay-content">
+                    <h2 class="overlay-title lose-title">Game Over</h2>
+                    <p class="overlay-message">No more moves available.</p>
+                    <button class="btn-overlay" id="btn-restart-gameover">Try Again</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="game-footer">
+            <p>Coded by Jaswanth Kumar</p>
+        </footer>
+    </div>
+
+    <!-- Scripts loaded in dependency order -->
+    <script src="js/storage.js"></script>
+    <script src="js/game-logic.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
