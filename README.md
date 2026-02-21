@@ -2,8 +2,6 @@
 
 A fully playable, premium-looking **2048** sliding puzzle game built with vanilla HTML, CSS, and JavaScript. Features a sleek dark theme, smooth animations, and mobile support.
 
-![Game Preview](https://img.shields.io/badge/Status-Playable-brightgreen) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-
 ---
 
 ##  Features
@@ -64,7 +62,7 @@ start index.html
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Usage |
 |---|---|
